@@ -141,7 +141,7 @@ class FirebaseCoreWeb extends FirebasePlatform {
 
         script.trustedScript = trustedScript;
         // TODO: Remove nonce. Publish a issue to Flutterfire repo.
-        script.setAttribute('nonce', 'nuvie');
+        script.setAttribute('nonce', 'unsafe-inline');
         web.document.head!.appendChild(script);
       } catch (e) {
         throw TrustedTypesException(e.toString());
